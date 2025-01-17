@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여기맡짐</title>
+    <link rel="shortcut icon" href="images/web/호돌 스티커.png" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="#"><img src="images/web/로고 화이트.png" alt="여기맡짐 로고"></a></h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">예약확인</a>
+                            <ul class="depth2">
+                                <li><a href="#">짐보관</a></li>
+                                <li><a href="#">짐배송</a></li>
+                                <li><a href="#">장기보관</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">짐보관</a>
+                            <ul class="depth2">
+                                <li><a href="#">짐보관 예약</a></li>
+                                <li><a href="#">짐보관 현황</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">이벤트</a>
+                            <ul class="depth2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">여기맡짐</a>
+                            <ul class="depth2">
+                                <li><a href="#">여기맡짐이란?</a></li>
+                                <li><a href="#">캐릭터 소개</a></li>
+                                <li><a href="#">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">마이페이지</a>
+                            <ul class="depth2">
+                                <li><a href="#">나의 정보</a></li>
+                                <li><a href="#">예약 관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="ham">메뉴보기</button>
+                    <div class="manb_wrap">
+                        <ul class="mgnb">
+                            <li><a href="#">예약확인</a></li>
+                            <li><a href="#">짐보관</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">여기맡짐</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="button">
+                    <a href="#" class="login">로그인</a>
+                    <a href="#" class="language">KR</a>
+                    <!-- <button class="login" type="button">로그인</button>
+                    <button class="language" type="button">KR</button> -->
+                </div><!-- button -->
+                <!-- <a href="#" class="ham"><img src="images/web/반응형.png" alt="햄버튼"></a> -->
+
+            </div> <!-- inner -->
+        </header>
+
+        <div class="fullpage">
+
+            <section class="service">
+                <div class="inner">
+                    <img src="images/web/메인화면.png" alt="여기맡짐" class="serv_img">
+                    <img src="images/web/Mask group.png" alt="여기맡짐" class="serv_img_0">
+                    <img src="images/web/main1.png" alt="여기맡짐" class="serv_img_1">
+                    <form class="service_form">
+                        <!-- <div class="service_btn">
+                            <a href="#">짐보관</a>
+                            <a href="#">짐배송</a>
+                        </div>service_btn -->
+
+                        <div class="form_group">
+                            <div class="service_btn">
+                                <a href="#">짐보관</a>
+                                <a href="#">짐배송</a>
+                            </div>
+                            <!-- 날짜 설정 -->
+                            <div class="serv">
+                                <div class="date">
+                                    <div class="start">
+                                        <label for="start-date">맡길 날짜</label>
+                                        <input type="date" max="9999-12-31" id="start-date" class="form-input"
+                                            data-placeholder="맡길날짜" required aria-required="true" />
+                                    </div><!-- start -->
+                                    <div class="end">
+                                        <label for="end-date">찾을날짜</label>
+                                        <input type="date" max="9999-12-31" id="end-date" class="form-input"
+                                            data-placeholder="찾을날짜" required aria-required="true" />
+                                        <!--id 고유하게 식별js에서 동작 구현 , class css적용 -->
+                                    </div><!-- end-date -->
+                                </div><!-- date -->
+
+
+                                <!-- 주소 검색 -->
+                                <div class="loca">
+                                    <label for="location">장소 또는 주소 검색</label><!-- location -->
+                                    <input type="text" id="location" class="form-input" placeholder="장소 또는 주소 검색" />
+                                </div><!-- loca -->
+
+                                <div class="quantity"><!-- 레이블 태그를 사용해야됨 -->
+                                    <button id="decrease" type="button" class="quantity-btn">-</button>
+                                    <input type="number" id="quantity" class="quantity-input" value="1" min="1" />
+                                    <button id="increase" type="button" class="quantity-btn plus">+</button>
+                                </div><!-- quantity -->
+
+                                <button type="button" class="search-btn">검색</button>
+                            </div><!-- form_group -->
+                    </form>
+                </div><!-- serv -->
+        </div><!-- inner -->
+        </section><!-- service -->
+
+        <section class="guide">
+            <div class="inner">
+                <h2>서비스 안내</h2>
+                <div class="gim">
+                    <dl class="gim1">
+                        <a href="#">
+                            <dt>짐보관</dt>
+                            <dd>국내 ·국외 어디서든 간편하게<br>
+                                개수, 무게 상관 없이 안심하고 맡길 수 있습니다</dd>
+                        </a>
+                    </dl>
+                    <dl class="gim2"><a href="#">
+                            <dt>짐배송</dt>
+                            <dd>숙소 또는 집 등 원하시는 장소에<br>
+                                안전하고 신속하게 짐을 전달 드립니다.</dd>
+                        </a>
+                    </dl>
+
+                    <dl class="gim3">
+                        <a href="#">
+                            <dt>짐 장기 보관</dt>
+                            <dd>짐 보관이 어려우신 분들을 위해<br>
+                                여기 맡겨 짐 센터에서 안전하게 보관 합니다.</dd>
+                        </a>
+                    </dl>
+                </div><!-- gim -->
+
+            </div><!-- inner -->
+        </section><!-- guide -->
+
+        <section class="banner_1">
+            <div class="inner">
+                <a href="#"> <img src="images/web/배너1.png" alt="여기맡짐 이벤트 배너1"></a>
+            </div> <!-- inner -->
+        </section><!-- banner_1 -->
+
+        <section class="review">
+            <div class="inner">
+                <h2>최고의 서비스</h2>
+                <div class="swiper review_txt">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <dl>
+                                <dt>최고의 짐 보관 서비스에요!</dt>
+                                <dd class="star">
+                                    <div class="st">
+                                        <span class="star1">★★★★</span><span class="star2">★</span>
+                                    </div>
+                                    <div class="day_1">
+                                        <span class="id">AL1234</span>
+                                        <span class="day">2024.12.26</span>
+                                    </div>
+                                </dd>
+                                <dd class="rev_txt">최고의 짐 보관 서비스에요!<br>
+                                    저렴한 가격에 매우 편리하게 이용 하였습니다ㅎㅎ<br>
+                                    여기 맡짐 앞으로도 자주 이용할께요~~</dd>
+                            </dl>
+                            <div class="rev_img">
+                                <img src="images/web/Section2_review/리뷰1.jpg" alt="상하이">
+                            </div><!-- rev_img -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <dl>
+                                <dt>다음에 또 이용 할께요~</dt>
+                                <dd class="star">
+                                    <div class="st">
+                                        <span class="star1">★★★★★</span>
+                                    </div>
+                                    <div class="day_1">
+                                        <span class="id">b1a425</span>
+                                        <span class="day">2024.11.19</span>
+                                    </div>
+                                </dd>
+                                <dd class="rev_txt">다음에 또 이용할 의향 100%에요ㅎㅎ<br>
+                                    덕분에 가벼운 몸가짐으로 여행 했어요<br>
+                                    몸이 가벼우니 더 즐거웠습니다 good~</dd>
+                            </dl>
+                            <div class="rev_img">
+                                <img src="images/web/Section2_review/리뷰2.png" alt="베트남">
+                            </div><!-- rev_img -->
+                        </div><!-- swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <dl>
+                                <dt>좋은 추억을 많이 만들었어요</dt>
+                                <dd class="star">
+                                    <div class="st">
+                                        <span class="star1">★★★★</span><span class="star2">★</span>
+                                    </div>
+                                    <div class="day_1">
+                                        <span class="id">glaop11</span>
+                                        <span class="day">2024.12.15</span>
+                                    </div>
+                                </dd>
+                                <dd class="rev_txt">예약이 정말 편리합니다<br>
+                                    숙소까지 짐 배송도 되어서 너무나도 편리하게<br>
+                                    사용했어요~ 주위 사람들한테도 추천했어요</dd>
+                            </dl>
+                            <div class="rev_img">
+                                <img src="images/web/Section2_review/리뷰3.png" alt="파리">
+                            </div><!-- rev_img -->
+                        </div><!-- swiper-slide -->
+
+                    </div><!-- swiper-wrapper -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div><!-- swiper -->
+            </div> <!-- inner -->
+        </section><!-- review -->
+
+        <section class="use">
+            <div class="inner">
+                <h2>짐 보관 및 배송 이용안내</h2>
+                <div class="use_text">
+                    <dl>
+                        <dt>1. 예약하기</dt>
+                        <dd>여기 맡짐 APP또는 웹 페이지에서 짐보관 또는 짐배송을<br class="bt_text">
+                            선택 후 날짜와 장소를 선택하여 예약하기를 진행합니다.<br>
+                            <span>*장기 보관 이용은 장기 보관 서비스를 선택해주세요.</span>
+                        </dd>
+
+                        <img src="images/web/Section3_use/1. 예약하기.jpg" alt="예약하기">
+                    </dl>
+
+                    <dl>
+                        <dt>2. 예약확인</dt>
+                        <dd>결제 후 예약 정보를 확인하여 해당 되는 날짜에 장소로<br class="bt_text">
+                            이동합니다. 짐 보관 시 받으시는 예약 번호를 꼭 확인해주세요.
+                            <pre>
+                                </pre>
+
+                        </dd>
+                        <img src="images/web/Section3_use/3. 현장예약.jpg" alt="예약확인">
+                    </dl>
+
+                    <dl>
+                        <dt>3. 현장 예약</dt>
+                        <dd>오프라인 이용 시 해당 가맹점의 QR 코드를 스캔하여 진행<br class="bt_text">
+                            합니다.<br>
+                            <span> *점포 사정상 개수와 사이즈에 제한이 있을 수 있습니다.</span>
+                        </dd>
+                        <img src="images/web/Section3_use/2. 에약확인.jpg" alt="현장예약">
+                    </dl>
+                </div><!-- use_text -->
+            </div> <!-- inner -->
+        </section><!-- use -->
+
+        <section class="banner_2">
+            <div class="inner">
+                <a href="#"> <img src="images/web/배너2.png" alt="여기맡짐 이벤트 배너2"></a>
+            </div> <!-- inner -->
+        </section><!-- banner_2 -->
+
+        <section class="why">
+            <div class="inner">
+                <div class="why_cont">
+                    <div class="left">
+                        <div class="why_text">
+                            <h2>왜 여기 맡짐 일까?</h2>
+                            <p>여기맡짐은 엄격하게 심사하여 검증 된 점포들로 국내, 국외<br>
+                                어디에서든 이용이 가능합니다.<br>
+                                소중한 짐들을 안심하고 여기 맡짐에 맡겨주세요.</p>
+                        </div><!-- main_text -->
+                        <div class="why_sub_text">
+                            <ul>
+                                <li>안전한 서비스</li>
+                                <li>편리한 서비스</li>
+                                <li>저렴한 비용</li>
+                                <li>파손 및 분실 책임보장</li>
+                            </ul>
+                        </div><!-- why_sub_text -->
+                    </div><!-- left -->
+
+                    <div class="swiper resean_list">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <dl class="right_text">
+                                    <dt>- 안전한 서비스</dt>
+                                    <dd><img src="images/web/Section4_why/안전한 서비스.jpg" alt="안전한 서비스"></dd>
+                                    <dd class="why_smtext">여기 맡짐은 사업자 등록증, 운영 여부, 시설 등 전문가들이 엄격하게 심사하여
+                                        검증받은 가맹점들로 구성 되어 있으며 안전 배송 서비스를 운영 하고 있습니다.<br>
+                                        분실 및 파손 걱정 없이 안심하고 이용해보세요.</dd>
+                                </dl><!--right_text-->
+                            </li>
+
+                            <li class="swiper-slide">
+                                <dl class="right_text">
+                                    <dt>- 편리한 서비스</dt>
+                                    <dd><img src="images/web/Section4_why/편리한 서비스.jpg" alt="안전한 서비스"></dd>
+                                    <dd class="why_smtext">국내 뿐만 아니라 국외에서도 언제 어디서든 이용
+                                        지하철, 공항, 버스 정류장이 없어도 걱정 없는
+                                        편리하게 이용해 보세요</dd>
+                                </dl><!--right_text-->
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+                </div><!-- cont -->
+            </div> <!-- inner -->
+
+        </section><!-- why -->
+
+        <section class="promotions">
+            <div class="inner">
+                <div class="pro_cto">
+                    <div class="pro_lift">
+                        <img src="images/web/Section5_promotions/캐리어그룹.png" alt="굿즈">
+                    </div><!-- pro_lift -->
+
+                    <div class="pro_right">
+                        <dl>
+                            <dt>
+                                <p class="pr_text_top">여기 맡짐 회원에게만 드리는</p>
+                                <div class="ps_s">
+                                    <span class="s1">특</span>
+                                    <span class="s2">별</span>
+                                    <span class="s3">한</span>
+                                    <span class="s4">혜</span>
+                                    <span class="s5">택</span>
+                                </div><!-- ps_s -->
+                            </dt>
+                            <dd>여기 맡짐만의 특별한 네임택과 웰컴 KIT를 드려요!<br>
+                                첫 이용 고객에게는 <span>12시간 무료 이용권</span>을 함께 드려요.</dd>
+                        </dl>
+                        <div class="but">
+                            <div class="kit"><a href="#">웰컴KIT받기</a>
+                            </div><!-- kit -->
+                            <div class="free"><a href="#">무료이용하기</a></div><!-- free -->
+                        </div><!-- but -->
+
+                    </div><!-- pro_right -->
+                </div><!-- pro_cto -->
+            </div> <!-- inner -->
+        </section><!-- promotions -->
+
+        <section class="app">
+            <div class="inner">
+                <div class="app_text">
+                    <div class="app_lift">
+                        <dl>
+                            <dt><span>APP</span>으로 간편하게 예약하고 즐겨요</dt>
+                            <dd>언제 어디서든 손쉽게 이용 가능한 여기 맡짐 APP을 이용해보세요.<br>
+                                한눈에 들어오는 화면으로 누가나 간편하게 사용이 가능해요</dd>
+                        </dl>
+                        <div class="app_but"><a href="#">다운로드</a></div><!-- app_but -->
+
+                    </div><!-- app_lift -->
+                    <div class="app_right">
+                        <div class="app_img">
+                            <img src="images/web/Section6_app/어플리케이션.png" alt="app이미지1">
+                        </div><!-- app_img -->
+                    </div><!-- app_right -->
+                </div><!-- app_texr -->
+
+            </div> <!-- inner -->
+        </section><!-- app -->
+
+        <section class="reservation">
+            <div class="inner">
+                <div class="rese_text">
+                    <div class="rese_lift">
+                        <div class="padd">
+                            <div class="rese_but">
+                                <a href="#" class="custody">짐보관</a>
+                                <a href="#" class="delivery">짐배송</a>
+                            </div><!-- rese_but -->
+                            <div class="re_day">
+                                <input type="text" class="re_start-date" placeholder="맡길 날짜">
+                                <input type="text" class="re_end-date" placeholder="찾을 장소">
+                                <input type="text" class="re_local" placeholder="장소">
+                            </div><!-- re_day -->
+
+                            <div class="re_quantity">
+                                <div class="re_au1">
+                                    <h3>짐종류와 수량을 선택해주세요</h3>
+                                    <div class="re_cont">
+                                        <dl class="small">
+                                            <dt>소형가방</dt>
+                                            <dd>도트백,배낭,지갑 등</dd>
+                                        </dl>
+                                        <div class="re_num">
+                                            <button class="minus">-</button>
+                                            <p id="result">1</p>
+                                            <button class="plus">+</button>
+                                        </div><!-- re_num -->
+                                    </div><!-- re_cont -->
+
+                                    <div class="re_cont">
+                                        <dl class="carrier">
+                                            <dt>캐리어</dt>
+                                            <dd>12인치 ~ 32인치</dd>
+                                        </dl>
+                                        <div class="re_num">
+                                            <button class="minus">-</button>
+                                            <p id="result">1</p>
+                                            <button class="plus">+</button>
+                                        </div><!-- re_num -->
+                                    </div><!-- re_cont -->
+
+                                    <div class="re_cont">
+                                        <div class="re_cont_left">
+                                            <dl class="special">
+                                                <dt>특수 사이즈</dt>
+                                                <dd>자전거, 골프 가방 등</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="re_num">
+                                            <button class="minus">-</button>
+                                            <p id="result">1</p>
+                                            <button class="plus">+</button>
+                                        </div><!-- re_num -->
+                                    </div><!-- re_cont -->
+                                </div><!-- re_au1 -->
+                            </div><!-- re_quantity -->
+                        </div><!-- padd -->
+
+                        <div class="condition">
+                            <div class="con_padd">
+                                <div class="cond_text">
+                                    <h3>조건과 일치하는 위치<span>3</span>개</h3>
+                                    <p class="cond_right">필터</p>
+                                </div><!-- cond_text -->
+                                <img src="images/web/Section7_reservation/조건일치 이미지 전체.png" alt="카페 이미지">
+                            </div><!-- con_padd -->
+                        </div><!-- condition -->
+                    </div><!-- rese_lift -->
+                    <div class="rese_right">
+                        <input type="text" class="rese-search" placeholder="장소 검색하기">
+                        <!-- <div class="rese_img"><img src="images/web/Section7_reservation/지도.png" alt="지도"> -->
+                    </div><!-- rese_right -->
+
+                </div><!-- rese_text -->
+            </div> <!-- inner -->
+        </section><!-- reservation -->
+
+        <footer id="footer" class="section fp-auto-height">
+            <div class="footer_lift">
+                <div class="footer_txt_1">
+                    <p><span>개인정보취급방침</span> &#xff5c; <span>이용약관</span></p>
+                    <p><span>여기맡짐</span> &#xff5c; 여기맡짐 부산지점</p>
+                    <p><span>주식회사 여기맡짐</span></p>
+                    <p>부산광역시 부전동 중앙대로 111 부전역 1층 AAA빌딩</p>
+                    <p>대표자:정미란 &#xff5c; 사업자등록번호 : 123-45-67891</p>
+                    <p>여기맡짐 대표번호 : 1234-5678</p>
+                    <p>통신판매신고번호 : 제 1234-부산진구-1234호</p>
+                    <p>Copyright 1234. YEOGIMATJIM All rights reserved</p>
+                </div><!-- txr_1 -->
+
+                <div class="footer_txt_2">
+                    <dl>
+                        <dt>서비스</dt>
+                        <dd>짐보관</dd>
+                        <dd>짐배송</dd>
+                        <dd>장기보관</dd>
+                    </dl>
+                </div><!-- txt_2 -->
+
+                <div class="footer_txt_3">
+                    <dl>
+                        <dt>지원</dt>
+                        <dd>이벤트</dd>
+                        <dd>공지사항</dd>
+                        <dd>자주묻는질문</dd>
+                        <dd>매장안내</dd>
+                        <dd>제휴문의</dd>
+                    </dl>
+                </div><!-- txt_3 -->
+
+                <div class="footer_txt_4">
+                    <dl>
+                        <dt>스토리</dt>
+                        <dd>채용</dd>
+                    </dl>
+                </div><!-- txt_4 -->
+            </div><!-- footer_lift -->
+
+            <div class="right">
+                <div class="ri_txt">
+                    <dl>
+                        <dt>1234-5678</dt>
+                        <dd>월~토요일 am.08:00 ~ pm 6:00</dd>
+                        <dd>일요일 / 공휴일 휴무</dd>
+                    </dl>
+                </div><!-- ri_txt -->
+                <div class="sns">
+                    <a href="#"><img src="images/web/footer/icon_face.png" alt="페이스북"></a>
+                    <a href="#"><img src="images/web/footer/icon_yut.png" alt="유튜브"></a>
+                    <a href="#"><img src="images/web/footer/icon_ins.png" alt="인스타"></a>
+                    <a href="#"> <img src="images/web/footer/icon_blog.png" alt="블로그"></a>
+                </div><!-- sns -->
+
+
+            </div><!-- right -->
+
+        </footer>
+
+
+
+    </div>
+    </div> <!-- wrap -->
+
+</body>
+
+</html>
